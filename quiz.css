@@ -1,0 +1,441 @@
+.lp_title_row{
+    padding-top: 35px;
+}
+/* .lp_title_quiz{
+    font-family: "Roboto";
+} */
+.lp_title_grad{
+    font-family: "Poppins";
+    color: #049f36;
+}
+.lp_titlerow_link_align{
+    margin-top: 17px !important;
+}
+.lp_titlerow_link_align.howitworkspadding{
+    padding-left: 110px;
+}
+.lp_titlerow_loginbtn_align{
+    margin-top: 10px !important;
+}
+.lp_titlerow_link{
+    color: rgb(187, 187, 187);
+    font-family: "Roboto";
+}
+.lp_titlerow_loginbtn, .lrs_signup_btn{
+    color: #049f36;
+    background-color: white;
+    border: 2px solid #049f36;
+    font-family: "Poppins";
+    box-shadow: none;
+    text-transform: none;
+    height: 40px;
+}
+.lp_titlerow_loginbtn, .lp_info_startsolving_btn{
+    height: 40px;
+}
+.lp_titlerow_loginbtn:hover, .lrs_signup_btn:hover{
+    color: #049f36;
+    background-color: #aeffc8;
+    border: 2px solid #049f36;
+    box-shadow: none;
+}
+hr.greylinewithmargin{
+    border-top: 1px solid rgb(233, 233, 233);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.lp_slogan_row{
+    padding-top: 70px;
+}
+.lp_slogan{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 50;
+    font-weight: 500;
+}
+.lp_info_row_belowslogan{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 2px;
+}
+.lp_info_belowslogan{
+    color: gray;
+    font-size: larger;
+    border-left: 2px solid rgb(92, 92, 92);
+    padding-inline-start: 10px;
+}
+.lp_info_startsolving_btn, .lrs_loginbtn, .su_signup_btn, .qs_btns.next, .sp_btn{
+    color: white;
+    background-color: #049f36;
+    border: 2px solid #049f36;
+    font-size: 15.5;
+    font-family: "Poppins";
+    box-shadow: none;
+    text-transform: none;
+    height: 40px;
+}
+.lp_info_startsolving_btn:hover, .lrs_loginbtn:hover, .su_signup_btn:hover, .qs_btns.next:hover, .sp_btn:hover{
+    color: white;
+    background-color: #00ee4b;
+    border: 2px solid #00ee4b;
+    box-shadow: none;
+}
+.lp_info_knowmore{
+    color: #049f36;
+    line-height: 2.5;
+}
+.lp_info_knowmore_icon_align{
+    vertical-align: middle;
+}
+
+/* login or sign up page */
+
+.lrs_card{
+    margin-top: 60px;
+    border: none !important;
+    box-shadow: none !important;
+}
+.lrs_title_quiz, .su_title_quiz{
+    font-size: 60;
+}
+.lrs_title_grad, .su_title_grad{
+    font-family: "Poppins";
+    color: #049f36;
+    font-size: 60;
+}
+.row.center.lrs_greeting_title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.lrs_greeting_title, .su_greeting_title{
+    color: gray;
+    font-size: larger;
+}
+.lrs_inputfield, .su_inputfield{
+    border: 1px solid rgb(201, 201, 201) !important;
+    line-height: 2;
+    margin: 0px 50px 0px 50px;
+}
+input{
+    border: none !important;
+    height: 18px !important;
+    padding-inline-start: 18px !important;
+    color: #049f36;
+    font-weight: 500;
+}
+input:focus{
+    box-shadow: none !important;
+}
+.lrs_inputfield input:focus, .su_inputfield input:focus{
+    border-left: 3px solid #049f36 !important;
+}
+.lrs_input_span, .su_input_span{
+    padding-inline-start: 18px;
+    font-family: "Poppins";
+    color: rgb(70, 70, 70);
+}
+.lrs_inputfield.infe_password{
+    border-top: none !important;
+}
+.lrs_forgotpass{
+    color: rgb(105, 105, 105);
+    padding-left: 25px;
+}
+.lrs_forgotpass_row{
+    margin-top: 20px;
+}
+.lrs_actionbtn_row{
+    margin-top: 20px;
+}
+.lrs_loginbtn, .lrs_signup_btn, .su_signup_btn{
+    height: 40px;
+    width: 100px;
+}
+.lrs_hatimg_col{
+    background-color: rgb(251, 251, 251);
+}
+.lrs_hatimg{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+div.lrs_message{
+    color: red !important;
+    position: absolute;
+}
+
+/* signup page */
+
+.su_card{
+    margin-top: 30px;
+    border: none !important;
+    box-shadow: none !important;
+}
+.su_card .card-content{
+    padding-bottom: 0px !important;
+}
+.row.center.su_greeting_title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.su_actionbtn_row{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.su_remove_top_border{
+    border-top: none !important;
+}
+.datepicker-date-display{
+    background-color: #049f36;
+}
+.datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done{
+    color: #049f36;
+}
+.datepicker-table td.is-today{
+    color: #049f36;
+}
+.datepicker-table td.is-selected{
+    background-color: #049f36 !important;
+    color: white;
+}
+.dropdown-content li>a, .dropdown-content li>span{
+    color: #049f36;
+}
+button:focus{
+    background-color: #049f36 !important;
+}
+.red_text_row_padding{
+    padding-top: 10px;
+}
+
+/* quiz started */
+
+.qs_username{
+    line-height: 1.5;
+    font-family: "Poppins";
+    color: #049f36;
+    font-size: 16;
+}
+.qs_person_icon_align{
+    vertical-align: middle;
+}
+.qs_username_col{
+    margin-top: 14px !important;
+}
+.qs_pogress_fullbar{
+    height: 10px;
+    background-color: rgb(225, 225, 225);
+    position: relative;
+    margin: 20px 300px 20px 300px;
+    border-radius: 5px;
+}
+.qs_pogress{
+    height: 10px;
+    background-color: #049f36;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 1;
+}
+.question_div{
+    line-height: 160px;
+    background-color: #049f36;
+    text-align: center;
+    color: white;
+    font-family: "Poppins";
+    font-size: x-large;
+    margin-bottom: 40px;
+}
+.qs_options_row{
+    padding-top: 40px;
+}
+.boxed label {
+    display: inline-block;
+    border: solid 2px transparent;
+    transition: all 0.3s;
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-size: x-large;
+    background-color: rgb(225, 225, 225);
+    line-height: 125px;
+    width: 250px;
+    position: absolute;
+    text-align: center;
+    margin-left: 35px !important;
+}
+.boxed input[type="radio"] {
+  display: none;
+}
+.boxed input[type="radio"]:checked + label {
+  background-color: #049f36;
+  color: white;
+}
+.boxed input[type="radio"] + label:hover{
+    background-color: rgb(200, 200, 200);
+}
+.boxed input[type="radio"]:checked + label:hover{
+    background-color: #049f36;
+}
+a.qs_abcd{
+    position: absolute;
+    z-index: 1;
+    padding-left: 41px;
+    padding-top: 2px;
+    font-family: "Poppins";
+    font-size: larger;
+    color: black;
+}
+.qs_action_btns_row{
+    padding-top: 215px;
+}
+.qs_btns{
+    line-height: 2.1;
+    vertical-align: middle;
+    height: 40px;
+}
+.qs_btn_icon{
+    vertical-align: middle;
+}
+.qs_btns.previous{
+    background-color: rgb(200, 200, 200);
+    color: black;
+    text-transform: none;
+    font-size: 15.5;
+    font-family: "Poppins";
+}
+.qs_btns.previous:hover{
+    background-color: rgb(146, 146, 146) !important;
+}
+.qs_btns.skip{
+    background-color: transparent;
+    color: #049f36;
+    box-shadow: none;
+    text-transform: none;
+    font-size: 15.5;
+    font-family: "Poppins";
+}
+.qs_btns.previous:hover{
+    background-color:transparent;
+}
+.qs_btns.next{
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+/* score page */
+.score_div{
+    position: absolute;
+    padding-left: 410px;
+    padding-top: 90px;
+}
+.sp_score_img{
+    width: 520px;
+    position: absolute;
+}
+.your_score{
+    position: absolute;
+    color: white;
+    width: 520px;
+    font-size: 46;
+    text-align: center;
+    padding-top: 120px;
+    font-family: "Poppins";
+}
+.mark{
+    line-height: 520px;
+    width: 520px;
+    text-align: center !important;
+    position: absolute;
+    font-size: 160;
+    color: white;
+    font-weight: 600;
+}
+.sp_btn_div{
+    position: absolute;
+    width: 660px;
+    text-align: right;
+    padding-top: 415px;
+}
+
+/* admin page */
+.admpage_btn_width{
+    width: 200px;
+}
+.adminpage_card_topic{
+    border-radius: 10px;
+    background-color: #a3ffc0;
+}
+.adminpage_card_addquestions{
+    border-radius: 10px;
+    background-color: #cbffdb;
+}
+::placeholder{
+    color: skyblue;
+    opacity: 1;
+}
+.admpg_get_topic{
+    padding-left: 15px;
+    font-size: larger;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.admpg_get_topic_input input{
+    font-size: x-large !important;
+    height: 35px !important;
+}
+.admpg_getques_input input{
+    font-size: larger !important;
+    height: 35px !important;
+}
+.ngrepeat_input{
+    font-size: larger;
+    color: #049f36;
+    padding-inline-start: 18px;
+    font-weight: 500;
+    height: 35px !important;
+}
+.admpa_login_acbtn_row{
+    margin-top: 0px;
+}
+
+
+.choosetopic_card{
+    border-radius: 10px !important;
+}
+.ct_heading{
+    font-size: xx-large !important;
+    font-weight: 600 !important;
+    font-family: "Roboto";
+}
+.ct_info{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: gray;
+    font-size: larger;
+}
+
+.ct_boxed label {
+    display: inline-block;
+    border: solid 2px transparent;
+    transition: all 0.3s;
+    font-size: larger;
+    color: black;
+    font-weight: 600;
+    font-family: "Poppins";
+    background-color: rgb(225, 225, 225);
+    line-height: 30px;
+    width: 200px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 45px !important;
+}
+.ct_boxed input[type="radio"] {
+    display: none;
+}
+.ct_boxed input[type="radio"] + label:hover{
+    background-color: #049f36;
+    color: white;
+}

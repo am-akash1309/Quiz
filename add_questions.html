@@ -1,0 +1,80 @@
+<div>
+    <div class="row lp_title_row">
+        <div class="col s3 center">
+            <img src="./full_logo.png" width="139px">
+        </div>
+        <div class="col s3 offset-s6 center lp_titlerow_loginbtn_align qs_username_col">
+            <a class="qs_username">Admin: <i class="material-icons qs_person_icon_align">person</i>{{adminname}}</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col s10 offset-s1">
+            <div class="card adminpage_card_topic">
+                <div class="card-content">
+                    <div class="admpg_get_topic">Topic:</div>
+                    <div class="admpg_get_topic_input"><input type="text" placeholder="Please enter the topic of the questions. EX: Animals" ng-model="topic" ng-change="topicfilled()"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-show="addquesrow" ng-repeat="el in input_question">
+        <div class="col s10 offset-s1">
+            <div class="card adminpage_card_addquestions">
+                <div class="card-content">
+                    <div class="admpg_get_topic">Question:</div>
+                    <div class="ngrepeat_input">{{el.question}}</div>
+                    
+                    <div class="admpg_get_topic">Option 1:</div>
+                    <div class="ngrepeat_input">{{el.option1}}</div>
+                    
+                    <div class="admpg_get_topic">Option 2:</div>
+                    <div class="ngrepeat_input">{{el.option2}}</div>
+                    
+                    <div class="admpg_get_topic">Option 3:</div>
+                    <div class="ngrepeat_input">{{el.option3}}</div>
+                    
+                    <div class="admpg_get_topic">Option 4:</div>
+                    <div class="ngrepeat_input">{{el.option4}}</div>
+                    
+                    <div class="admpg_get_topic">Answer:</div>
+                    <div class="ngrepeat_input">{{el.answer}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-show="addquesrow">
+        <div class="col s10 offset-s1">
+            <div class="card adminpage_card_addquestions">
+                <div class="card-content">
+                    <div class="admpg_get_topic">Question:</div>
+                    <div class="admpg_getques_input"><input type="text" placeholder="EX: Which is the tallest animal in the world?" ng-model="question"></div>
+                    
+                    <div class="admpg_get_topic">Option 1:</div>
+                    <div class="admpg_getques_input"><input type="text" placeholder="EX: Elephant" ng-model="option1"></div>
+                    
+                    <div class="admpg_get_topic">Option 2:</div>
+                    <div class="admpg_getques_input"><input type="text" placeholder="EX: Giraffe" ng-model="option2"></div>
+                    
+                    <div class="admpg_get_topic">Option 3:</div>
+                    <div class="admpg_getques_input"><input type="text" placeholder="EX: Kangaroo" ng-model="option3"></div>
+                    
+                    <div class="admpg_get_topic">Option 4:</div>
+                    <div class="admpg_getques_input"><input type="text" placeholder="EX: Ostrich" ng-model="option4"></div>
+                    
+                    <div class="admpg_get_topic">Answer:</div>
+                    <div class="admpg_getques_input"><input type="text" placeholder="Please enter only the option number. EX: 2" ng-model="answer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s6 center" ng-show="addbtn">
+            <a class="btn su_signup_btn admpage_btn_width" ng-click="addques()">Add question</a>
+        </div>
+        <div class="col s6 center" ng-show="donebtn">
+            <a class="btn su_signup_btn" ng-click="done()">Done</a>
+        </div>
+    </div>
+</div>

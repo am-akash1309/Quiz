@@ -1,0 +1,53 @@
+<div>
+    <div class="row">
+        <div class="col s6">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card su_card">
+                        <div class="card-content">
+                            <span class="card-title center">
+                                <img src="./full_logo.png" width="200px">
+                            </span>
+                            <div class="row center su_greeting_title">
+                                Please Signup to start solving.
+                            </div>
+                            <div  class="su_inputfield">
+                                <span class="su_input_span">Name</span>
+                                <input type="text" ng-model="name">
+                            </div>
+                            <div  class="su_inputfield su_remove_top_border">
+                                <span class="su_input_span">Email address</span>
+                                <input type="email" ng-model="email">
+                            </div>
+                            <div  class="su_inputfield su_remove_top_border">
+                                <span class="su_input_span">Date of Birth</span>
+                                <input type="date" ng-model="dob">
+                            </div>
+                            <div  class="su_inputfield su_remove_top_border">
+                                <span class="su_input_span">Password</span>
+                                <input type="password" ng-model="password">
+                            </div>
+                            <div  class="su_inputfield su_remove_top_border">
+                                <span class="su_input_span">Confirm Password</span>
+                                <input type="password" ng-model="confirmpassword">
+                            </div>
+                            <div class="row center red_text_row_padding">
+                                <div class="col s12">
+                                    <a class="red-text">{{message}}</a>
+                                </div>
+                            </div>
+                            <div class="row su_actionbtn_row ">
+                                <div class="col s12 center">
+                                    <a class="btn su_signup_btn" ng-click="signup_user()">Signup</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 center lrs_hatimg_col">
+            <img class="lrs_hatimg" src="./lrs_img.jpg" width="490px">
+        </div>
+    </div>
+</div>

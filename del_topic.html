@@ -1,0 +1,28 @@
+<div>
+    <div class="row lp_title_row">
+        <div class="col s3 center">
+            <img src="./full_logo.png" width="139px">
+        </div>
+        <div class="col s3 offset-s6 center lp_titlerow_loginbtn_align qs_username_col">
+            <a class="qs_username">Admin: <i class="material-icons qs_person_icon_align">person</i>{{adminname}}</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col s10 offset-s1">
+            <div class="card choosetopic_card hoverable">
+                <div class="card-content">
+                    <div class="center ct_heading">Delete Topic</div>
+                    <div class="center ct_info">Select one of the following topic to delete it.</div>
+                    <div class="row center">
+                        <div class="col s3 ct_boxed" ng-repeat="topic in topics">
+                            <input type="radio" id="topic{{$index}}" name="topic" data-target="modal{{$index}}" class="modal-trigger" ng-click="delete(topic)">
+                            <label for="topic{{$index}}">{{topic}}</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

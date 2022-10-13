@@ -1,0 +1,42 @@
+<div>
+    <div class="row">
+        <div class="col s6">
+            <div class="card lrs_card">
+                <div class="card-content">
+                    <span class="card-title center">
+                        <img src="./full_logo.png" width="200px">
+                    </span>
+                    <div class="row center lrs_greeting_title">
+                        Admins Login
+                    </div>
+                    <div  class="lrs_inputfield">
+                        <span class="lrs_input_span">Email address</span>
+                        <input type="email" ng-model="email">
+                    </div>
+                    <div  class="lrs_inputfield infe_password">
+                        <span class="lrs_input_span">Password</span>
+                        <input type="password" ng-model="password">
+                    </div>
+                    <div  class="lrs_inputfield infe_password">
+                        <span class="lrs_input_span">Date of Birth</span>
+                        <input type="date" ng-model="dob">
+                    </div>
+                    <div class="row lrs_forgotpass_row">
+                        <div class="col s12 center">
+                            <a class="red-text">{{message}}</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row admpa_login_acbtn_row">
+                        <dv class="col s12 center">
+                            <a class="btn lrs_loginbtn" ng-click="verifyadmin()">Login</a>
+                        </dv>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s6 center lrs_hatimg_col">
+            <img class="lrs_hatimg" src="./lrs_img.jpg" width="490px">
+        </div>
+    </div>
+</div>

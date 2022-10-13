@@ -1,0 +1,58 @@
+<div>
+    <div class="row lp_title_row">
+        <div class="col s3 center">
+            <img src="./full_logo.png" width="136px">
+        </div>
+        <div class="col s2 offset-s3 lp_titlerow_link_align howitworkspadding">
+            <a class="lp_titlerow_link">How it works?</a>
+        </div>
+        <div class="col s1 center lp_titlerow_link_align">
+            <a class="lp_titlerow_link">Features</a>
+        </div>
+        <div class="col s1 center lp_titlerow_link_align">
+            <a class="lp_titlerow_link">About Us</a>
+        </div>
+        <div class="col s2 center lp_titlerow_loginbtn_align qs_username_col">
+            <a class="qs_username"><i class="material-icons qs_person_icon_align">person</i>{{username}}</a>
+        </div>
+    </div>
+    <hr class="greylinewithmargin">
+    <div class="qs_pogress_fullbar"><div class="qs_pogress" ng-style="{ 'width': progress + '%' }"></div></div>
+    <div class="row" ng-repeat="el in questions" ng-show="{{$index}}==slide"> 
+        <div class="question_div">{{el.question}}</div>
+        <div class="col s3 boxed">
+            <input type="radio" id="option1{{$index}}" name="question{{$index}}" ng-model="answer[$index]" ng-change="getanswer()" value="1">
+            <label for="option1{{$index}}">{{el.option1}}</label>
+            <a class="qs_abcd">A.</a>
+        </div>
+        <div class="col s3 boxed">                                                          
+            <input type="radio" id="option2{{$index}}" name="question{{$index}}" ng-model="answer[$index]" ng-change="getanswer()" value="2">
+            <label for="option2{{$index}}">{{el.option2}}</label>
+            <a class="qs_abcd">B.</a>
+        </div>
+        <div class="col s3 boxed">
+            <input type="radio" id="option3{{$index}}" name="question{{$index}}" ng-model="answer[$index]" ng-change="getanswer()" value="3">
+            <label for="option3{{$index}}">{{el.option3}}</label>
+            <a class="qs_abcd">C.</a>
+        </div>
+        <div class="col s3 boxed">                                                          
+            <input type="radio" id="option4{{$index}}" name="question{{$index}}" ng-model="answer[$index]" ng-change="getanswer()" value="4">
+            <label for="option4{{$index}}">{{el.option4}}</label>
+            <a class="qs_abcd">D.</a>
+        </div>
+    </div>
+    <div class="row qs_action_btns_row">
+        <div class="col s6 center">
+            <a class="btn qs_btns previous" ng-hide="slide==0" ng-click="beforeslide()"><i class="material-icons qs_btn_icon">navigate_before</i>Previous</a>
+        </div>
+        <div class="col s3" style="text-align: right;">
+            <a class="btn qs_btns next center" ng-hide="slide==(questions.length - 1)" ng-click="nextslide()">Next<i class="material-icons qs_btn_icon">navigate_next</i></a>
+            <a class="btn qs_btns next center" ng-show="slide==(questions.length - 1)" ng-click="validate(); gotoscore()">Submit</a>
+        </div>
+        <div class="col s3 left">
+            <a class="btn qs_btns skip" ng-click="nextslide()" ng-hide="slide==(questions.length - 1)">
+                Skip<i class="material-icons qs_btn_icon">fast_forward</i>
+            </a>
+        </div>
+    </div>
+</div>

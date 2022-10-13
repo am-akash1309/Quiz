@@ -1,0 +1,41 @@
+<div>
+    <div class="row lp_title_row">
+        <div class="col s3 center">
+            <img src="./full_logo.png" width="139px">
+        </div>
+        <div class="col s2 offset-s3 lp_titlerow_link_align howitworkspadding">
+            <a class="lp_titlerow_link" href="" target="_blank">How it works?</a>
+        </div>
+        <div class="col s1 center lp_titlerow_link_align">
+            <a class="lp_titlerow_link" href="" target="_blank">Features</a>
+        </div>
+        <div class="col s1 center lp_titlerow_link_align">
+            <a class="lp_titlerow_link" href="" target="_blank">About Us</a>
+        </div>
+        <div class="col s2 center lp_titlerow_loginbtn_align qs_username_col">
+            <a class="qs_username"><i class="material-icons qs_person_icon_align">person</i>{{username}}</a>
+        </div>
+    </div>
+    <hr class="greylinewithmargin">
+    <br>
+    <br>
+    <div class="row">
+        <div class="col s10 offset-s1">
+            <div class="card choosetopic_card hoverable">
+                <div class="card-content">
+                    <div class="center ct_heading">Choose your favorite topic</div>
+                    <div class="center ct_info">Select one of the following topic to start quiz</div>
+                    <div class="row center">
+                        <div class="col s3 ct_boxed" ng-repeat="topic in topics" ng-show="chossetopicifnotopicindatabase">
+                            <input type="radio" id="topic{{$index}}" name="topic" ng-click="startquiz(topic)">
+                            <label for="topic{{$index}}">{{topic}}</label>
+                        </div>
+                        <div class="center ct_boxed" ng-hide="chossetopicifnotopicindatabase">
+                            No Topics to Display.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
